@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <div class="container">
+            <header>
+                <img src="images/logo.svg" alt="logo" class="logo">
+        
+             <nav>
+            <a href="#" class="hide-desktop">
+                <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+
+
+            </a>
+
+            <ul class="show-desktop hide-mobile" id="nav">
+                <li id="exit" class="exit-btn hide-desktop">
+                    <img src="images/exit.svg" alt="exit menu">
+                </li>
+                <li><a href="index.html">O mnie</a></li>
+                <li><a href="view/cennik.html">Cennik</a></li>
+                <li><a href="view/kontakt.html">Kontakt</a></li>
+                <li><a href="view/galeria.html">Galeria</a></li>
+
+            </ul>
+
+            </nav>
+        </header>
+
+        <section>
+            <img src="images/pngegg.svg" alt="piesek" class="piesek">
+
+            <h1>Nauka Agility dla Ciebie i Twojego pupila</h1>
+            <p class="subhead">Już dzisiaj dołącz do nas wraz ze swoim czworonożnym przyjacielem </p>
+            
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+
+
+        </section>
+    </div>
+
+    <div class="green-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/308974-ffffff.svg" alt="lapki icon">
+                    <p> Odkryj swojego pupila
+                        z całkiem innej strony
+                        - poprzez wspólny trening Agility
+                        To takie proste</p>
+                </li>
+                <li>
+                    <img src="images/piessylwetka.svg" alt="sylwetka psa">
+                    <p>Naucz swojego psa
+                        nowych sztuczek
+                        podstawowych jak i 
+                        zaawansowanych komend</p>
+                </li>
+                <li>
+                    <img src="images/piesnasmyczy.svg" alt="pies na smyczy">
+                    <p>Stwórz swój własny tor
+                        i weź udział w pobliskich 
+                        zawodach Agility
+                        Spraw uśmiech twojemu pupilowi</p>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </div>
+
+    <div class="greeny-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                    <img src="images/profil.svg" alt="user">
+                    <blockquote>"Przekażę Ci wiedzę, która Ci umożliwi oraz zachęci Ciebie i Twojego pupila do wspólnego pokonywania barier w sferze Agility. Poznasz psi świat z całkiem innej perspektywy."</blockquote>
+                    <figcaption>- Oliwia Kosiorowska</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Zacznij już teraz!</h2>
+        <a href="view/kontakt.html" class="cta">Kontakt</a>
+    </div>
+
+    <footer>
+    <div class="footer-container">
+        <div class="container">
+            <a href="#">
+                <img src="images/logoczarne.svg" class="logo" alt="logo"></a>
+                <p class="address">Pod Lasem, 44-200 <br>Rybnik</p>
+            
+                <ul class="footer-links">
+                    <li>
+                        <a href="#">Warunki usługi</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/nestibc/"> <img  src="images/ig.svg"  alt="instagram" class="instagram" ></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/oliwia.kosiorowska.71"> <img  src="images/fb.svg"  alt="facebook" class="facebook" ></a>
+                    </li>
+                    <li>
+                        <a href="#">Polityka prywatnosci</a>
+                    </li>
+                    <li>
+                        <a>Copyright by Filip Ojczyk</a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <div class="end">
+
+
+    </div>
+</footer>
+
+<script>
+    var menu = document.getElementById('menu');
+    var nav = document.getElementById('nav');
+    var exit = document.getElementById('exit');
+
+    menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile')
+        e.preventDefault();
+    });
+
+    exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile')
+        e.preventDefault();
+    });
+
+
+    
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cennik</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <div class="container">
+            <header>
+                <img src="images/logo.svg" alt="logo" class="logo">
+        
+             <nav>
+            <a href="#" class="hide-desktop">
+                <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+
+
+            </a>
+
+            <ul class="show-desktop hide-mobile" id="nav">
+                <li id="exit" class="exit-btn hide-desktop">
+                    <img src="images/exit.svg" alt="exit menu">
+                </li>
+                <li><a href="index.html">O mnie</a></li>
+                <li><a href="view/cennik.html">Cennik</a></li>
+                <li><a href="view/kontakt.html">Kontakt</a></li>
+                <li><a href="view/galeria.html">Galeria</a></li>
+
+            </ul>
+
+            </nav>
+        </header>
+
+        <section>
+            <img src="images/golden.png" alt="piesek2" class="piesek2">
+
+            <h1>Cennik naszych usług </h1>
+            <p class="subhead">Myslałes/as co chcesz poćwiczyć z Twoim pupilem?<br>
+                                Zerknij niżej </p>
+            
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+
+
+        </section>
+    </div>
+
+
+
+
+
+
+
+    <div class="greeny-container">
+        <div class="containertable">
+            <ul>
+                <li>
+            <table>
+                <tr><th></th><th>Trening Agility</th><th>Nose working</th><th>Posłuszeństwo</th></tr>
+                <tr><th>60 minut</th><td>x PLN</td><td>x PLN</td><td>x PLN</td></tr>
+                <tr><th>120 minut</th><td>x PLN</td><td>x PLN</td><td>x PLN</td></tr>
+                <tr><th>180 minut</th><td>x PLN</td><td>x PLN</td><td>x PLN</td></tr>
+            </table>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <figure>
+                    <img src="images/agility.svg" alt="agility" class="agility">
+                <blockquote>Trening Agility</blockquote>
+                <p>Szkolenie odbywa się indywidualnie, a w jego trakcie pracujesz z trenerem nad fizycznym oraz emocjonalnym przygotowaniem swojego psa do agility.</p>
+            </figure>
+        </li>
+        <li>
+            <figure>
+
+            <img src="images/nose.svg" alt="nose" class="nose">
+                <blockquote>Nose working</blockquote>
+                <p>zajęcia które mają na celu wprowadzenie psa i jego człowieka w świat poszukiwania zapachów. Za pomocą noseworku chcemy zwiększyć pewność siebie psa, umocnić więź na linii pies-opiekun, zapewnić psu świetną rozrywkę oraz zmęczyć go umysłowo.</p>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="images/posluszenstwo.svg" alt="posluszenstwo" class="posluszenstwo">
+                <blockquote>Posłuszeństwo</blockquote>
+                <p>pomożemy Ci rozpocząć pracę z Twoim psem, tak abyś pokochał wspólne spacery. Nauczymy Twojego psa słuchać poleceń, dzięki czemu zmienisz swojego psa w doskonałego kompana na wspólne piesze wycieczki i spacery.</p>
+            </figure>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <h2>Zacznij już teraz!</h2>
+        <a href="view/kontakt.html" class="cta">Kontakt</a>
+    </div>
+
+    <footer>
+    <div class="footer-container">
+        <div class="container">
+            <a href="#">
+                <img src="images/logoczarne.svg" class="logo" alt="logo"></a>
+                <p class="address">Pod Lasem, 44-200 <br>Rybnik</p>
+            
+                <ul class="footer-links">
+                    <li>
+                        <a href="#">Warunki usługi</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/nestibc/"> <img  src="images/ig.svg"  alt="instagram" class="instagram" ></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/oliwia.kosiorowska.71"> <img  src="images/fb.svg"  alt="facebook" class="facebook" ></a>
+                    </li>
+                    <li>
+                        <a href="#">Polityka prywatnosci</a>
+                    </li>
+                    <li>
+                        <a>Copyright by Filip Ojczyk</a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <div class="end">
+
+
+    </div>
+</footer>
+
+<script>
+    var menu = document.getElementById('menu');
+    var nav = document.getElementById('nav');
+    var exit = document.getElementById('exit');
+
+    menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile')
+        e.preventDefault();
+    });
+
+    exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile')
+        e.preventDefault();
+    });
+
+
+    
+</script>
+
+
+</html>
+</body>
